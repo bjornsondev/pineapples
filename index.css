@@ -1,0 +1,105 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+audio {
+  position: absolute;
+}
+
+button {
+  padding: 10px;
+  background: #000;
+  border-radius: 10px;
+  border: none;
+  color: rgb(238, 182, 119);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-right: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#startButtons, #endButtons {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 333;
+  display: none;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#game {
+  margin: auto;
+  overflow: hidden;
+  width: 1000px;
+  height: 570px;
+  background-image: url(../assets/bg.png);
+  background-size: contain;
+  position: relative;
+}
+
+#we {
+  width: 70px;
+  position: absolute;
+  bottom: 130px;
+  transition: .2s;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+#pineapples {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#count {
+  background-color: rgba(0,0,0,.2);
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(238, 182, 119);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.pineapple {
+  position: absolute;
+  width: 50px;
+  height: 35px;
+  background-image: url(../assets/rings.png);
+  background-size: contain;
+}
+
+@keyframes run {
+  from {
+    bottom: 130px;
+  }
+  50% {
+    bottom: 150px;
+  }
+  to {
+    bottom: 130px;
+  }
+}
