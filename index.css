@@ -46,7 +46,7 @@ button {
   overflow: hidden;
   width: 1000px;
   height: 570px;
-  background-image: url(../assets/bg.png);
+  background-image: url(assets/bg.png);
   background-size: contain;
   position: relative;
 }
@@ -88,7 +88,7 @@ button {
   position: absolute;
   width: 50px;
   height: 35px;
-  background-image: url(../assets/rings.png);
+  background-image: url(assets/rings.png);
   background-size: contain;
 }
 
